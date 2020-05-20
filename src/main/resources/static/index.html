@@ -1,0 +1,163 @@
+
+<!------ Include the above in your HEAD tag ---------->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="styles/jquery.min.js" type="text/javascript"></script>
+        <script src="styles/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/MyScript.js" type="text/javascript"></script>
+        <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="styles/MainStyle.css" rel="stylesheet" type="text/css"/>
+        <title></title>
+    </head>
+    <body style="background-color:#eff8b8">
+       <div >
+	   <div>
+	   <div ><h2 style="text-align : center; margin-top: 20px;">Gestion des attestations</h2></div>
+	   
+	   
+	   </div>
+	   
+        <div class="container register">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Génération d'une attestation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Historique des attestation</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        
+                            <div class="row register-form">
+                                <div class="col">
+                                    <form method="post">
+                                        <div class="form-group">
+										<div class="row">
+    <label class="col col-form-label">N° de DP :</label>
+    <div class="col">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="">
+    </div>
+	<label class="col col-form-label">Type Attestation</label>
+    <div class="col">
+      <select class="browser-default custom-select">
+  <option selected>selectionner le type d'attestation</option>
+  <option value="1">Attestation de pension avec montant de pension</option>
+  <option value="2">Attestation de pension sans montant de pension</option>
+  <option value="3">Attestation des réglements mensuels sans IR</option>
+  <option value="4">Attestation des réglements mensuels avec IR</option>
+  <option value="5">Attestation des réglements annuels</option>
+  <option value="6">Attestation des prélèvement mutuels</option>
+  <option value="7">Attestation des majorations familiales</option>
+  <option value="8">Attestation de domiciliation</option>
+</select>
+    </div>
+  </div>
+  </div>
+                                        <div class="form-group">
+										<div class="row">
+    <label class="col col-form-label">Année :</label>
+    <div class="col">
+      <input type="number" placeholder="YYYY" min="2016" max="2019">
+
+    </div>
+	<label class="col col-form-label">Nombre d'attestation :</label>
+    <div class="col">
+      <input type="number" name="quantity" min="1" max="3" class="form-control" id="inputEmail3" placeholder="">
+    </div>
+  </div>
+  </div>
+  
+                                        <div class="form-group btn-group btn-group-justified">
+  <a href="#" class="btn btn-success form-new1">Générer</a>
+  <a href="#" class="btn btn-primary form-new1">Editer</a>
+  <a href="#" class="btn btn-secondary form-new1">Annuler</a>
+</div> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show text-align form-new" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                         
+                           
+                        
+                            <div class="row register-form">
+                                <div class="col">
+                                    <form method="post">
+                                        <div class="form-group">
+										<div class="row">
+    <label class="col col-form-label">N° de DP :</label>
+    <div class="col">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="">
+    </div>
+	<label class="col col-form-label">Date début :</label>
+    <div class="col">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="">
+    </div>
+  </div>
+  </div>
+                                        <div class="form-group">
+										<div class="row">
+    <label class="col col-form-label">Référence d'attestation :</label>
+    <div class="col">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="">
+    </div>
+	<label class="col col-form-label">Date fin :</label>
+    <div class="col">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="">
+    </div>
+  </div>
+  </div>
+  
+                                        <div class="form-group btn-group btn-group-justified">
+  <a href="#" class="btn btn-success form-new1">Rechercher</a>
+  <a href="#" class="btn btn-primary form-new1">Consulter</a>
+  <a href="#" class="btn btn-secondary form-new1">Annuler</a>
+</div> 
+                                    </form>
+                                </div>
+                            </div>
+                        <div>
+						<table class="table table-bordered" style="background-color : #f1f1f1">
+    <thead  class="thead-light">
+      <tr>
+        <th>N° de DP</th>
+        <th>Nom</th>
+        <th>Prenom</th>
+		<th>CIN</th>
+        <th>Type d'attestation</th>
+        <th>Référence</th>
+		<th>Date d'édition</th>
+        <th>Utilisateur</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+		 <td></td>
+        <td></td>
+        <td></td>
+		 <td></td>
+        <td></td>
+      </tr>
+      
+    </tbody>
+  </table>
+						
+						
+						
+						</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		</div>
+    </body>
+</html>

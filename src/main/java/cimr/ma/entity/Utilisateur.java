@@ -1,5 +1,6 @@
 package cimr.ma.entity;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -10,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Utilisateur {
+public class Utilisateur implements Serializable  {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id_utilisateur;
 	private String nom;
