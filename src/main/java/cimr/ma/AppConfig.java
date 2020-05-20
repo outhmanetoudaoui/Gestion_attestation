@@ -8,6 +8,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @Configuration
 public class AppConfig implements WebMvcConfigurer  {
 	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addRedirectViewController("/", "index.html");
+		registry.addViewController("/index").setViewName("index");
 	}
 }
