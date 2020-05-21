@@ -8,13 +8,17 @@ import org.springframework.stereotype.Service;
 import cimr.ma.dao.AttestationDao;
 import cimr.ma.entity.Attestation;
 import cimr.ma.metier.AttestationMetier;
+
 @Service
 public class AttestationMetierImpl implements AttestationMetier {
 	@Autowired
 	private AttestationDao attestationRepo;
+
 	@Override
-	public void create(Attestation attestation) {
-		attestationRepo.save(attestation);
+	public void create(String numDP, String type, String annee, int nombre) {
+		if( type.equals("Attestation des règlements mensuels avec IR") ) {
+			
+		}
 
 	}
 

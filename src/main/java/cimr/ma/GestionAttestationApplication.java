@@ -8,5 +8,6 @@ public class GestionAttestationApplication {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(GestionAttestationApplication.class, args);
+		System.out.println("Gestion Attestation");
 	}
 }
